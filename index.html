@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Webpage - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .discover-card {
+            background-color: var(--surface-color);
+            border-radius: var(--border-radius-medium);
+            box-shadow: var(--shadow-medium);
+            padding: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .discover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .discover-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        .discover-text {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .discover-link {
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .discover-link:hover {
+            color: var(--primary-dark);
+        }
+
+        .quick-access-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-dark);
+            padding: 2rem;
+            border-radius: var(--border-radius-medium);
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-medium);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .quick-access-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-access-icon {
+            font-size: 4.5rem;
+            /* Larger icon size */
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .quick-access-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body class="container py-4">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded-3 shadow-sm mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">🌐 Universal Web</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <i class="fa-solid fa-bars menu-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all-apps.html">All Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="most-using-apps.html">Most Using Apps</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm text-center">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold text-dark">Welcome to Universal Web!</h1>
+            <p class="fs-4 mt-3">All your favorite apps, all in one place. Simple, fast, and easy to use.</p>
+            <a href="all-apps.html" class="btn btn-primary btn-lg mt-4">Explore All Apps</a>
+        </div>
+    </div>
+
+    <div class="app-section">
+        <h2 class="text-center mb-4">Quick Access</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+            <div class="col">
+                <a href="#" class="quick-access-card">
+                    <span class="material-symbols-outlined quick-access-icon">mail</span>
+                    <span class="quick-access-name">Gmail</span>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="quick-access-card">
+                    <i class="fa-brands fa-youtube quick-access-icon"></i>
+                    <span class="quick-access-name">YouTube</span>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="quick-access-card">
+                    <i class="fa-brands fa-whatsapp quick-access-icon"></i>
+                    <span class="quick-access-name">WhatsApp</span>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="quick-access-card">
+                    <span class="material-symbols-outlined quick-access-icon">add_box</span>
+                    <span class="quick-access-name">Add</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-section">
+        <h2 class="text-center mb-4">Discover</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="discover-card">
+                    <h5 class="discover-title">New to Universal Web? Start Here.</h5>
+                    <p class="discover-text">Find out how you can organize all your favorite web apps for quick access
+                        and better productivity.</p>
+                    <a href="#" class="discover-link">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="discover-card">
+                    <h5 class="discover-title">Top 5 Productivity Apps for 2023</h5>
+                    <p class="discover-text">A list of the best web-based productivity tools to help you get more done
+                        in less time.</p>
+                    <a href="#" class="discover-link">Explore the list</a>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="discover-card">
+                    <h5 class="discover-title">Stay Updated with Universal News</h5>
+                    <p class="discover-text">Get the latest news and updates from a variety of sources all in one
+                        unified feed.</p>
+                    <a href="#" class="discover-link">View News Feed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-section">
+        <h2 class="text-center mb-4">📊 App Usage Analytics</h2>
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title fw-bold mb-4">This Week Overview</h5>
+
+                <!-- Gmail -->
+                <div class="d-flex align-items-center mb-3">
+                    <span class="me-3 text-danger"><i class="fa-solid fa-envelope fa-lg"></i></span>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <span>Gmail</span>
+                            <small class="text-success">↑ 12%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-danger" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <span class="ms-3 fw-bold">65%</span>
+                </div>
+
+                <!-- YouTube -->
+                <div class="d-flex align-items-center mb-3">
+                    <span class="me-3 text-danger"><i class="fa-brands fa-youtube fa-lg"></i></span>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <span>YouTube</span>
+                            <small class="text-danger">↓ 5%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-danger" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <span class="ms-3 fw-bold">50%</span>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="d-flex align-items-center mb-3">
+                    <span class="me-3 text-success"><i class="fa-brands fa-whatsapp fa-lg"></i></span>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <span>WhatsApp</span>
+                            <small class="text-success">↑ 8%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <span class="ms-3 fw-bold">40%</span>
+                </div>
+
+                <!-- Instagram -->
+                <div class="d-flex align-items-center mb-3">
+                    <span class="me-3 text-pink"><i class="fa-brands fa-instagram fa-lg"></i></span>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <span>Instagram</span>
+                            <small class="text-warning">↑ 3%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-warning" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    <span class="ms-3 fw-bold">30%</span>
+                </div>
+
+                <!-- Google Drive -->
+                <div class="d-flex align-items-center">
+                    <span class="me-3 text-primary"><i class="fa-solid fa-folder fa-lg"></i></span>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <span>Google Drive</span>
+                            <small class="text-info">↑ 15%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-info" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    <span class="ms-3 fw-bold">25%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-section">
+        <h2 class="mb-4">🔔 Recent Notifications</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                ✅ Logged in at 10:30 AM
+                <span class="badge bg-success">New</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                📩 5 new Gmail emails
+                <span class="badge bg-primary">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                ▶️ Watched 3 YouTube videos
+                <span class="badge bg-danger">3</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                💬 2 WhatsApp messages
+                <span class="badge bg-info">2</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="app-section text-center">
+        <img src="https://i.pravatar.cc/100" class="rounded-circle mb-3 shadow" alt="User Avatar">
+        <h4 class="fw-bold">Muhammad Ahmad</h4>
+        <p class="text-muted">Today’s Stats</p>
+        <div class="d-flex justify-content-around">
+            <div>
+                <h5 class="fw-bold">12</h5>
+                <small>Apps Opened</small>
+            </div>
+            <div>
+                <h5 class="fw-bold">3h 25m</h5>
+                <small>Time Spent</small>
+            </div>
+            <div>
+                <h5 class="fw-bold text-success">78%</h5>
+                <small>Productivity</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-section">
+        <h2 class="mb-4 text-center">🎯 Productivity Goals</h2>
+
+        <p><strong>Daily Goal:</strong> Less than 2 hours on Social Media</p>
+        <div class="progress mb-3" style="height: 20px;">
+            <div class="progress-bar bg-danger" style="width: 70%;">1h 24m</div>
+        </div>
+
+        <p><strong>Work Apps:</strong> Target 5+ per day</p>
+        <div class="progress mb-3" style="height: 20px;">
+            <div class="progress-bar bg-success" style="width: 90%;">Completed</div>
+        </div>
+
+        <p><strong>Overall Productivity:</strong></p>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar bg-info" style="width: 78%;">78%</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

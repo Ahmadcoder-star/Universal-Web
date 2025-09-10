@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Apps</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .app-card {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            padding: 20px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .app-icon {
+            font-size: 48px;
+            color: #bb86fc;
+            margin-bottom: 10px;
+        }
+
+        .app-name {
+            font-size: 0.9em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>All Web Apps</h1>
+
+        <div class="app-grid">
+            <a href="https://trello.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">task</span>
+                <span class="app-name">Trello</span>
+            </a>
+            <a href="https://slack.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">chat</span>
+                <span class="app-name">Slack</span>
+            </a>
+            <a href="https://www.notion.so/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">notes</span>
+                <span class="app-name">Notion</span>
+            </a>
+            <a href="https://asana.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">checklist_rtl</span>
+                <span class="app-name">Asana</span>
+            </a>
+
+            <a href="https://www.tiktok.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">videocam</span>
+                <span class="app-name">TikTok</span>
+            </a>
+            <a href="https://www.reddit.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">forum</span>
+                <span class="app-name">Reddit</span>
+            </a>
+            <a href="https://discord.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">groups</span>
+                <span class="app-name">Discord</span>
+            </a>
+            <a href="https://www.pinterest.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">push_pin</span>
+                <span class="app-name">Pinterest</span>
+            </a>
+
+            <a href="https://www.spotify.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">headphones</span>
+                <span class="app-name">Spotify</span>
+            </a>
+            <a href="https://www.netflix.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">live_tv</span>
+                <span class="app-name">Netflix</span>
+            </a>
+
+            <a href="https://www.dropbox.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">folder_zip</span>
+                <span class="app-name">Dropbox</span>
+            </a>
+            <a href="https://drive.google.com/" class="app-card" target="_blank">
+                <span class="material-symbols-outlined app-icon">cloud_circle</span>
+                <span class="app-name">Google Drive</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
